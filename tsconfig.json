@@ -1,0 +1,33 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["jest"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./assets/*"]
+    },
+    "lib": ["ESNext", "DOM"],
+    "declaration": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "**/.bundle",
+    "**/.husky",
+    "**/.vscode",
+    "**/assets",
+    "**/android",
+    "**/ios",
+    "**/node_modules",
+    "**/patches",
+    "**/vendor",
+    "**/react-native.config.js",
+    "**/metro.config.js"
+  ]
+}
