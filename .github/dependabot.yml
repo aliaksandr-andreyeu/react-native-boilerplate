@@ -10,3 +10,6 @@ updates:
     target-branch: "development"
     schedule:
       interval: "weekly"
+    ignore:
+      -dependency-name: "react"
+      -dependency-name: "react-native"
