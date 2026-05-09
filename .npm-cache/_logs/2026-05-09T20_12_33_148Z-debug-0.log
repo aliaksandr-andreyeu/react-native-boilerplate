@@ -5,12 +5,12 @@
 4 silly config load:file:/Users/alex/Projects/github/react-native-boilerplate/.npmrc
 5 silly config load:file:/Users/alex/.npmrc
 6 silly config load:file:/Users/alex/.nvm/versions/node/v22.20.0/etc/npmrc
-7 verbose title npm view @axiomhq/react description dist-tags.latest homepage version time
-8 verbose argv "view" "--json" "--" "@axiomhq/react" "description" "dist-tags.latest" "homepage" "version" "time"
-9 verbose logfile logs-max:10 dir:/Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T12_34_46_880Z-
-10 verbose logfile /Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T12_34_46_880Z-debug-0.log
-11 silly logfile done cleaning log files
-12 http fetch GET 200 https://registry.npmjs.org/@axiomhq%2freact 1114ms (cache miss)
+7 verbose title npm run precommit
+8 verbose argv "run" "precommit"
+9 verbose logfile logs-max:10 dir:/Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_12_33_148Z-
+10 verbose logfile /Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_12_33_148Z-debug-0.log
+11 silly logfile start cleaning logs, removing 12 files
+12 silly logfile done cleaning log files
 13 verbose cwd /Users/alex/Projects/github/react-native-boilerplate
 14 verbose os Darwin 25.4.0
 15 verbose node v22.20.0
