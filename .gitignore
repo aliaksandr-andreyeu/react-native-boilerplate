@@ -79,3 +79,5 @@ yarn-error.log
 
 **/sentry.auth.properties
 **/google-services.json
+
+**/.npm-cache/_logs
