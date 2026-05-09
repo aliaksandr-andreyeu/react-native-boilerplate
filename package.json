@@ -25,6 +25,8 @@
     "analyzer:analyze:ios:json": "npx source-map-explorer ./analysis/ios.bundle ./analysis/ios.bundle.map --no-border-checks --json ./analysis/json/ios.json"
   },
   "dependencies": {
+    "@axiomhq/logging": "^0.2.1",
+    "@axiomhq/react": "^0.2.1",
     "@gorhom/bottom-sheet": "^5.2.10",
     "@react-native-async-storage/async-storage": "^3.0.2",
     "@react-native-cookies/cookies": "^6.2.1",
@@ -55,6 +57,7 @@
     "react-native-keyboard-controller": "^1.21.6",
     "react-native-keychain": "^10.0.0",
     "react-native-localize": "^3.7.0",
+    "react-native-logs": "^5.6.0",
     "react-native-orientation-locker": "^1.7.0",
     "react-native-reanimated": "^4.3.0",
     "react-native-restart": "^0.0.27",
