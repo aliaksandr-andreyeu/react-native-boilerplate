@@ -5,11 +5,11 @@
 4 silly config load:file:/Users/alex/Projects/github/react-native-boilerplate/.npmrc
 5 silly config load:file:/Users/alex/.npmrc
 6 silly config load:file:/Users/alex/.nvm/versions/node/v22.20.0/etc/npmrc
-7 verbose title npm run format /Users/alex/Projects/github/react-native-boilerplate/babel.config.js /Users/alex/Projects/github/react-native-boilerplate/index.js
-8 verbose argv "run" "format" "/Users/alex/Projects/github/react-native-boilerplate/babel.config.js" "/Users/alex/Projects/github/react-native-boilerplate/index.js"
-9 verbose logfile logs-max:10 dir:/Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_09_30_654Z-
-10 verbose logfile /Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_09_30_654Z-debug-0.log
-11 silly logfile start cleaning logs, removing 2 files
+7 verbose title npm run precommit
+8 verbose argv "run" "precommit"
+9 verbose logfile logs-max:10 dir:/Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_15_21_776Z-
+10 verbose logfile /Users/alex/Projects/github/react-native-boilerplate/.npm-cache/_logs/2026-05-09T20_15_21_776Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
 13 verbose cwd /Users/alex/Projects/github/react-native-boilerplate
 14 verbose os Darwin 25.4.0
