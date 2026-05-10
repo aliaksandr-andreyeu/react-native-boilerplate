@@ -103,7 +103,7 @@
     "patch-package": "^8.0.1",
     "prettier": "2.8.8",
     "react-native-svg-transformer": "^1.5.3",
-    "react-test-renderer": "19.2.5",
+    "react-test-renderer": "19.2.6",
     "reactotron-react-native": "^5.1.18",
     "rimraf": "^6.1.3",
     "source-map-explorer": "^2.5.3",
