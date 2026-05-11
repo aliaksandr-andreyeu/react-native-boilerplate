@@ -29,3 +29,14 @@ jobs:
 
       - name: Run Lint
         run: npm run lint
+
+  all-checks-passed:
+    needs: lint
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          if [[ "${{ needs.lint.result }}" != "success" ]]; then
+            echo "Checks did not pass"
+            exit 1
+          fi
