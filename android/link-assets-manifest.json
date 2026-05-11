@@ -1,0 +1,45 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/icomoon/icomoon.ttf",
+      "sha1": "1768a909c9b581d3a661b84faec9a8bbea961d52"
+    },
+    {
+      "path": "assets/fonts/icomoon/selection.json",
+      "sha1": "aa61e45ce3e80c71509ec14b548ccc1bcae82176"
+    },
+    {
+      "path": "assets/fonts/montserrat/Montserrat-Black.ttf",
+      "sha1": "e9abe094b65469f6b6a373b543ab7030dc145c7c"
+    },
+    {
+      "path": "assets/fonts/montserrat/Montserrat-Bold.ttf",
+      "sha1": "be7c1438070ab637e11716915e4e50903726dcc8"
+    },
+    {
+      "path": "assets/fonts/montserrat/Montserrat-ExtraBold.ttf",
+      "sha1": "84f16776e2099d3b57d8ed239b76e6fa3284b2e7"
+    },
+    {
+      "path": "assets/fonts/montserrat/Montserrat-Medium.ttf",
+      "sha1": "77f3553415d858c653baea45aacab20196776334"
+    },
+    {
+      "path": "assets/fonts/rubik/Rubik-Bold.ttf",
+      "sha1": "d04bacd3927e346c4455c0a2d427de53b7f5b282"
+    },
+    {
+      "path": "assets/fonts/rubik/Rubik-ExtraBold.ttf",
+      "sha1": "820aa71b2c6d12287f209501c66324aa382e91bc"
+    },
+    {
+      "path": "assets/fonts/rubik/Rubik-Medium.ttf",
+      "sha1": "59cf22fda5c9969f2813cf56c1bfcdf2287b8bdf"
+    },
+    {
+      "path": "assets/fonts/rubik/Rubik-Regular.ttf",
+      "sha1": "3e9234c2d3a05e6177c9f50a2196b315a3716d10"
+    }
+  ]
+}
