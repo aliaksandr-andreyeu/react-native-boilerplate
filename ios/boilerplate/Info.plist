@@ -34,7 +34,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -56,5 +56,17 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Rubik-Bold.ttf</string>
+		<string>Rubik-Medium.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Rubik-ExtraBold.ttf</string>
+		<string>Montserrat-ExtraBold.ttf</string>
+		<string>Rubik-Regular.ttf</string>
+		<string>Montserrat-Black.ttf</string>
+		<string>icomoon.ttf</string>
+	</array>
 </dict>
 </plist>

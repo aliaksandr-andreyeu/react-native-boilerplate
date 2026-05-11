@@ -14,6 +14,16 @@
 		F76FC94BDD1F582DF31A65ED /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7242530C6CCF486B8F3473C2 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8DF99FFBD7458487C0F09B /* BootSplash.storyboard */; };
 		1FDD9012F59E4C429EEB6A15 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15832DF9055E470AB58E5BD1 /* Colors.xcassets */; };
+		526131DF5EFA469C820FECDE /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607F7F61FA16434BBA0BE60F /* Montserrat-Medium.ttf */; };
+		4C3F68A73C234F0A984580AC /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAACFC2C38E34EA6A8057FE1 /* Rubik-Bold.ttf */; };
+		B0AF9D94C9834908905C5C8E /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03E84CDC31934F3EBDA590D3 /* Rubik-Medium.ttf */; };
+		37220DEE7A54467EA8A8336D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB2A2EF977F493280F7ED7F /* Montserrat-Bold.ttf */; };
+		89BC7911171D41BEBA9AE0DB /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D251BA769FD40DBADCCFF46 /* Rubik-ExtraBold.ttf */; };
+		76F9F69DAB994F7C9B3F1951 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F00410612C994331859E8B3D /* Montserrat-ExtraBold.ttf */; };
+		6534917D936E49C19A796D20 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232503E9AC3345E5B7BCABB2 /* Rubik-Regular.ttf */; };
+		5D9EF85B07C9465EB86E1880 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB87F97CA84E419C8B4FA6 /* Montserrat-Black.ttf */; };
+		B13C172410D2464093778667 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2BB674453D47B396A7E742 /* icomoon.ttf */; };
+		E6C7E6BEB4664F4680299E2A /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = A1C2F78D15D84C3FB5E98368 /* selection.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,16 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		1D8DF99FFBD7458487C0F09B /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "boilerplate/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		15832DF9055E470AB58E5BD1 /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "boilerplate/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
+		607F7F61FA16434BBA0BE60F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAACFC2C38E34EA6A8057FE1 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; name = "Rubik-Bold.ttf"; path = "../assets/fonts/rubik/Rubik-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		03E84CDC31934F3EBDA590D3 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; name = "Rubik-Medium.ttf"; path = "../assets/fonts/rubik/Rubik-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AB2A2EF977F493280F7ED7F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D251BA769FD40DBADCCFF46 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/rubik/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F00410612C994331859E8B3D /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		232503E9AC3345E5B7BCABB2 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; name = "Rubik-Regular.ttf"; path = "../assets/fonts/rubik/Rubik-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6EFB87F97CA84E419C8B4FA6 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; name = "Montserrat-Black.ttf"; path = "../assets/fonts/montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB2BB674453D47B396A7E742 /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../assets/fonts/icomoon/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1C2F78D15D84C3FB5E98368 /* selection.json */ = {isa = PBXFileReference; name = "selection.json"; path = "../assets/fonts/icomoon/selection.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7104A6A028C2499D86E0CEA2 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -103,6 +124,24 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		7104A6A028C2499D86E0CEA2 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				607F7F61FA16434BBA0BE60F /* Montserrat-Medium.ttf */,
+				DAACFC2C38E34EA6A8057FE1 /* Rubik-Bold.ttf */,
+				03E84CDC31934F3EBDA590D3 /* Rubik-Medium.ttf */,
+				0AB2A2EF977F493280F7ED7F /* Montserrat-Bold.ttf */,
+				2D251BA769FD40DBADCCFF46 /* Rubik-ExtraBold.ttf */,
+				F00410612C994331859E8B3D /* Montserrat-ExtraBold.ttf */,
+				232503E9AC3345E5B7BCABB2 /* Rubik-Regular.ttf */,
+				6EFB87F97CA84E419C8B4FA6 /* Montserrat-Black.ttf */,
+				AB2BB674453D47B396A7E742 /* icomoon.ttf */,
+				A1C2F78D15D84C3FB5E98368 /* selection.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -169,6 +208,16 @@
 				F76FC94BDD1F582DF31A65ED /* PrivacyInfo.xcprivacy in Resources */,
 				7242530C6CCF486B8F3473C2 /* BootSplash.storyboard in Resources */,
 				1FDD9012F59E4C429EEB6A15 /* Colors.xcassets in Resources */,
+				526131DF5EFA469C820FECDE /* Montserrat-Medium.ttf in Resources */,
+				4C3F68A73C234F0A984580AC /* Rubik-Bold.ttf in Resources */,
+				B0AF9D94C9834908905C5C8E /* Rubik-Medium.ttf in Resources */,
+				37220DEE7A54467EA8A8336D /* Montserrat-Bold.ttf in Resources */,
+				89BC7911171D41BEBA9AE0DB /* Rubik-ExtraBold.ttf in Resources */,
+				76F9F69DAB994F7C9B3F1951 /* Montserrat-ExtraBold.ttf in Resources */,
+				6534917D936E49C19A796D20 /* Rubik-Regular.ttf in Resources */,
+				5D9EF85B07C9465EB86E1880 /* Montserrat-Black.ttf in Resources */,
+				B13C172410D2464093778667 /* icomoon.ttf in Resources */,
+				E6C7E6BEB4664F4680299E2A /* selection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
