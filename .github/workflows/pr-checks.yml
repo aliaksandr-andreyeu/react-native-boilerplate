@@ -44,8 +44,11 @@ jobs:
           node-version: 22.13.0
           cache: 'npm'
 
+      - name: Install Dependencies
+        run: npm ci
+
       - name: Run Tests
-        run: npm run lint
+        run: npm run test
 
   all-checks-passed:
     needs: [lint, test]
