@@ -25,7 +25,7 @@
     "analyzer:analyze:ios:json": "npx source-map-explorer ./analysis/ios.bundle ./analysis/ios.bundle.map --no-border-checks --json ./analysis/json/ios.json"
   },
   "dependencies": {
-    "@axiomhq/logging": "^0.2.1",
+    "@axiomhq/logging": "^0.2.2",
     "@axiomhq/react": "^0.2.1",
     "@gorhom/bottom-sheet": "^5.2.14",
     "@react-native-async-storage/async-storage": "^3.0.2",
