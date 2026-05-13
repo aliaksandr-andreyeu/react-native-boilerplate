@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "start": "npm run watchman:del-all && react-native start --reset-cache",
     "test": "jest",
+    "test:silent": "jest --silent",
     "android:clean:build": "rimraf ./android/build ./android/app/.cxx ./android/app/build",
     "ios:clean:build": "rimraf ./ios/Podfile.lock ./ios/Pods",
     "android:clean": "npm run android:clean:build && cd android && ./gradlew --stop && ./gradlew clean && ./gradlew generateCodegenArtifactsFromSchema --rerun-tasks",
