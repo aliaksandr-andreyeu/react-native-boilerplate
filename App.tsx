@@ -5,8 +5,7 @@
  * @format
  */
 
-import React, { FC, useLayoutEffect, useCallback, useMemo, Fragment, useEffect, useState } from 'react';
-import { useFocusEffect, useTheme, useIsFocused } from '@react-navigation/native';
+import React, { useLayoutEffect } from 'react';
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
