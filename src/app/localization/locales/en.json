@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "tabs": {
+      "dashboard": "Home",
+      "events": "Events",
+      "communities": "Communities",
+      "search": "Search",
+      "profile": "Profile"
+    }
+  },
+  "common": {
+    "continue": "Continue"
+  },
+  "screens": {
+    "dashboard": {
+      "title": "Dashboard"
+    },
+    "events": {
+      "title": "Events"
+    },
+    "communities": {
+      "title": "Communities"
+    },
+    "search": {
+      "title": "Search"
+    },
+    "profile": {
+      "title": "Profile"
+    },
+    "auth": {
+      "agree-tc-privacy": "By selecting \"Next\", you agree to the <terms>Terms and Conditions</terms> and <privacy>Privacy Policy</privacy>",
+      "confirm-password": "Confirm Password",
+      "email-address": "Email Address",
+      "forgot-password": "Forgot Password{{ sign }}",
+      "have-account": "Have Account",
+      "login": "Log In",
+      "new-password": "New Password",
+      "one-time-password": "One-Time Password",
+      "or": "or",
+      "password": "Password",
+      "register": "Register",
+      "skip-registration": "Skip Registration",
+      "username": "Username",
+      "with": "with",
+      "with-email": "With Email"
+    },
+    "choose-language": {
+      "title": "Choose Language"
+    },
+    "menu": {
+      "my-profile": "My Profile",
+      "events": "Events",
+      "create-event": "Create Event",
+      "communities": "Communities",
+      "ideas-feedback": "Feedback",
+      "privacy-policy": "Privacy Policy",
+      "log-out": "Log Out",
+      "sign-in": "Sign In",
+      "register": "Register"
+    }
+  },
+  "errors": {
+    "ooops-something-went-wrong": "Ooops! Something went wrong...",
+    "whatever-happened-it-was-our-fault": "Whatever happened, it was probably our fault",
+    "try-again": "Please try again"
+  }
+}
