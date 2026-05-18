@@ -11,9 +11,6 @@ import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BaseIcon, BaseIconName, hideBootSplash } from '@/shared';
 
-import { createMMKV } from 'react-native-mmkv';
-const storage = createMMKV();
-
 // add this line inside your App.tsx
 
 function App() {
