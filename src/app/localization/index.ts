@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { getLocales } from 'react-native-localize';
-import { getAppLanguage, setAppLanguage } from '@/shared/utils/storage';
+import { getAppLanguage, setAppLanguage } from '@/shared/lib/storage';
 
 import en from './locales/en.json';
 /*
