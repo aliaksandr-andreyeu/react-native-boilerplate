@@ -1,7 +1,7 @@
 import createIconSet from '@react-native-vector-icons/icomoon';
 import icoMoonConfig from '@assets/fonts/icomoon/selection.json';
 
-export enum BaseIconSize {
+export const enum BaseIconSize {
   xxs = 8,
   xs = 12,
   sm = 16,
@@ -11,7 +11,7 @@ export enum BaseIconSize {
   xxl = 32
 }
 
-export enum BaseIconName {
+export const enum BaseIconName {
   Plus = 'plus',
   Search = 'search',
   User = 'user',

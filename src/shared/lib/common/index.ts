@@ -1,34 +1,28 @@
 import BootSplash from 'react-native-bootsplash';
 import { isEqual } from 'lodash';
-import { logError } from '@/shared/utils/logger';
+import { logError } from '@/shared/lib/logger';
 
-export const jsonParse = (data: string | null | undefined): null | string | Record<string | number, any> => {
-  if (!data) {
-    return null;
-  }
+export const jsonParse = <T>(data: string): T | undefined => {
   try {
-    const json = JSON.parse(data);
+    const json = JSON.parse(data) as T;
 
     return json;
   } catch (error: unknown) {
     console.error(error);
-    return null;
+    return;
   }
 };
 
-export function isValidJson(str: string) {
-  if (!str) {
-    return false;
-  }
+export const isValidJson = (str: string): boolean => {
   try {
-    const isJson = Boolean(jsonParse(str));
+    const isJson = !!jsonParse(str);
 
     return isJson;
   } catch (error: unknown) {
     console.error(error);
     return false;
   }
-}
+};
 
 export const hideBootSplash = async (isFade?: boolean) => {
   try {

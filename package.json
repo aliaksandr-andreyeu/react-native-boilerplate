@@ -29,7 +29,6 @@
     "@axiomhq/logging": "^0.2.2",
     "@axiomhq/react": "^0.2.2",
     "@gorhom/bottom-sheet": "^5.2.14",
-    "@react-native-async-storage/async-storage": "^3.0.2",
     "@react-native-cookies/cookies": "^6.2.1",
     "@react-native-firebase/app": "^24.0.0",
     "@react-native-firebase/crashlytics": "^24.0.0",
