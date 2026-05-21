@@ -1,13 +1,17 @@
-/**
- * @format
- */
-
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
-import App from '../App';
+import { render, screen } from '@testing-library/react-native';
+import Application from '@/index';
 
-test('renders correctly', async () => {
-  await ReactTestRenderer.act(() => {
-    ReactTestRenderer.create(<App />);
+jest.mock('@/app/localization', () => ({
+  Lang: {
+    AR: 'ar',
+    EN: 'en'
+  }
+}));
+
+describe('Application', () => {
+  it('renders correctly', () => {
+    render(<Application />);
+    expect(screen.toJSON()).not.toBeNull();
   });
 });
