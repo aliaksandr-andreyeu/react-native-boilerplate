@@ -1,10 +1,11 @@
-import { ThemeScheme } from '@/app/providers';
-import { Lang } from '@/app/localization';
-import { StorageKey, KeychainAccessTokenService, KeychainRefreshTokenService } from './constants';
+import { NavigationState } from '@react-navigation/native';
+import { Locale } from '@/shared/lib/localization';
+import { StorageKey, KeychainAccessTokenService, KeychainRefreshTokenService, ThemeScheme } from './constants';
 import { storageService } from './storageService';
 import { keychainService } from './keychainService';
 
 export { storage } from './storageService';
+export { ThemeScheme } from './constants';
 
 export const getAccessToken = async (): Promise<string | null> => {
   try {
@@ -48,6 +49,29 @@ export const setRefreshToken = async (token?: string | null): Promise<void> => {
   }
 };
 
+export const getNavigationState = (): NavigationState | undefined => {
+  try {
+    const theme = storageService.getObject(StorageKey.NavigationState);
+    return theme as NavigationState | undefined;
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+};
+
+export const setNavigationState = (navigationState?: NavigationState | null): boolean => {
+  if (!navigationState) {
+    return false;
+  }
+  try {
+    const result = storageService.setObject(StorageKey.NavigationState, navigationState);
+    return result;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+};
+
 export const getAppTheme = (): ThemeScheme | undefined => {
   try {
     const theme = storageService.getString(StorageKey.Theme);
@@ -71,22 +95,22 @@ export const setAppTheme = (theme?: ThemeScheme | null): boolean => {
   }
 };
 
-export const getAppLanguage = (): Lang | undefined => {
+export const getAppLocale = (): Locale | undefined => {
   try {
-    let language = storageService.getString(StorageKey.Language);
-    return language as Lang | undefined;
+    let locale = storageService.getObject(StorageKey.Language);
+    return locale as Locale | undefined;
   } catch (error) {
     console.error(error);
     return;
   }
 };
 
-export const setAppLanguage = (language: Lang): boolean => {
-  if (!language) {
+export const setAppLocale = (locale: Locale): boolean => {
+  if (!locale) {
     return false;
   }
   try {
-    const result = storageService.setString(StorageKey.Language, language);
+    const result = storageService.setObject(StorageKey.Language, locale);
     return result;
   } catch (error) {
     console.error(error);

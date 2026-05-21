@@ -1,1 +1,1 @@
-export * from './navigation';
+export { NavigationProvider, useNavigationTheme } from './navigation';

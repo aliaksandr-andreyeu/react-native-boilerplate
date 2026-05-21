@@ -1,5 +1,6 @@
 import { createMMKV, deleteMMKV } from 'react-native-mmkv';
-import { config, jsonParse } from '@/shared';
+import { jsonParse } from '@/shared/lib/common';
+import { config } from '@/shared/config';
 
 const { storageId: id } = config;
 

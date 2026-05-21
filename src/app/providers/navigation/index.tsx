@@ -1,31 +1,11 @@
-import React, {
-  FC,
-  ReactNode,
-  createContext,
-  useContext,
-  useLayoutEffect,
-  useState,
-  useMemo,
-  useCallback
-} from 'react';
+import { FC, ReactNode, createContext, useContext, useLayoutEffect, useState, useMemo, useCallback } from 'react';
 import { useColorScheme } from 'react-native';
-// import { EventSubscription, NativeEventEmitter, EmitterSubscription } from 'react-native';
-import {
-  createNavigationContainerRef,
-  NavigationContainer,
-  ParamListBase,
-  NavigationRoute
-} from '@react-navigation/native';
+import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 import * as Sentry from '@sentry/react-native';
 import { useLogger, useReduxDevToolsExtension } from '@react-navigation/devtools';
-import { theme, UserTheme, logError, getAppTheme, setAppTheme, config } from '@/shared';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { theme, UserTheme, logError, getAppTheme, setAppTheme, useNavigationPersistenceState } from '@/shared';
 
-const { isDevelopment } = config;
-
-const PERSISTENCE_KEY = 'NAVIGATION_STATE';
-
-export enum ThemeScheme {
+export const enum ThemeScheme {
   Dark = 'dark',
   Light = 'light'
 }
@@ -39,32 +19,10 @@ interface NavigationThemeContextProps {
   theme: UserTheme;
 }
 
-type NavigationStateChangeProps =
-  | Readonly<
-      Readonly<{
-        key: string;
-        index: number;
-        routeNames: string[];
-        history?: unknown[];
-        routes: NavigationRoute<ParamListBase, string>[];
-        type: string;
-        stale: false;
-      }>
-    >
-  | undefined;
-
 const NavigationThemeContext = createContext<NavigationThemeContextProps>({
   toggleTheme: () => {},
   theme: {} as UserTheme
 });
-
-export const navigationRef = createNavigationContainerRef<ParamListBase>();
-
-export const navigate = (name: string, params: object | undefined) => {
-  if (navigationRef.isReady()) {
-    navigationRef.navigate(name, params);
-  }
-};
 
 const navigationIntegration = Sentry.reactNavigationIntegration({
   enableTimeToInitialDisplay: true
@@ -73,16 +31,12 @@ const navigationIntegration = Sentry.reactNavigationIntegration({
 const { lightTheme, darkTheme } = theme || {};
 
 export const NavigationProvider: FC<NavigationProviderProps> = ({ children }) => {
-  const [isReady, setIsReady] = React.useState(false);
-  const [initialState, setInitialState] = React.useState();
+  const navigationRef = useNavigationContainerRef();
 
-  if (isDevelopment) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useLogger(navigationRef);
+  const { isReady, initialState, onStateChange } = useNavigationPersistenceState();
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useReduxDevToolsExtension(navigationRef);
-  }
+  useLogger(navigationRef);
+  useReduxDevToolsExtension(navigationRef);
 
   const colorScheme = useColorScheme();
   const isDarkDeviceMode = Boolean(colorScheme === ThemeScheme.Dark);
@@ -99,14 +53,14 @@ export const NavigationProvider: FC<NavigationProviderProps> = ({ children }) =>
   }, [isDarkAppMode]);
 
   useLayoutEffect(() => {
-    const checkAppThemeHandler = async () => {
+    const checkAppThemeHandler = () => {
       try {
-        const currentAppTheme = await getAppTheme();
+        const currentAppTheme = getAppTheme();
 
         if (!currentAppTheme) {
           const appColorScheme = isDarkDeviceMode ? ThemeScheme.Dark : ThemeScheme.Light;
 
-          await setAppTheme(appColorScheme);
+          setAppTheme(appColorScheme);
 
           return;
         }
@@ -121,32 +75,11 @@ export const NavigationProvider: FC<NavigationProviderProps> = ({ children }) =>
     checkAppThemeHandler();
   }, [isDarkDeviceMode]);
 
-  React.useEffect(() => {
-    const restoreState = async () => {
-      try {
-        const savedStateString = await AsyncStorage.getItem(PERSISTENCE_KEY);
-        const state = savedStateString ? JSON.parse(savedStateString) : undefined;
-
-        if (state !== undefined) {
-          setInitialState(state);
-        }
-      } catch (error: unknown) {
-        console.error(error);
-      } finally {
-        setIsReady(true);
-      }
-    };
-
-    if (!isReady) {
-      restoreState();
-    }
-  }, [isReady]);
-
   useLayoutEffect(() => {
-    const changeAppThemeHandler = async () => {
+    const changeAppThemeHandler = () => {
       try {
         const appColorScheme = isDarkAppMode ? ThemeScheme.Dark : ThemeScheme.Light;
-        await setAppTheme(appColorScheme);
+        setAppTheme(appColorScheme);
       } catch (error: unknown) {
         console.error(error);
         logError(error);
@@ -165,7 +98,7 @@ export const NavigationProvider: FC<NavigationProviderProps> = ({ children }) =>
     return () => {
       unsubscribeNavigationIsReadyListener();
     };
-  }, []);
+  }, [navigationRef]);
 
   const appTheme = useMemo(() => {
     if (isDarkAppMode === undefined) {
@@ -178,11 +111,6 @@ export const NavigationProvider: FC<NavigationProviderProps> = ({ children }) =>
 
     return lightTheme;
   }, [isDarkAppMode]);
-
-  const onStateChange = React.useCallback(async (state: NavigationStateChangeProps) => {
-    // console.warn('state', state);
-    await AsyncStorage.setItem(PERSISTENCE_KEY, JSON.stringify(state));
-  }, []);
 
   if (!children || !appTheme) {
     return null;

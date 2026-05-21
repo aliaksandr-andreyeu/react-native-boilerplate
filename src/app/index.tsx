@@ -1,12 +1,15 @@
 import { FC } from 'react';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { NavigationProvider } from './providers';
 import { Router } from './navigation';
 
 const App: FC = () => {
   return (
-    <BottomSheetModalProvider>
-      <Router />
-    </BottomSheetModalProvider>
+    <NavigationProvider>
+      <BottomSheetModalProvider>
+        <Router />
+      </BottomSheetModalProvider>
+    </NavigationProvider>
   );
 };
 

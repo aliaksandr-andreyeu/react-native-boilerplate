@@ -1,9 +1,5 @@
 import * as Keychain from 'react-native-keychain';
-
-export type KeychainOptions = {
-  service: string;
-  biometric?: boolean;
-};
+import { type KeychainOptions } from './types';
 
 export const keychainService = {
   set: async (key: string, value: string, options: KeychainOptions): Promise<boolean> => {

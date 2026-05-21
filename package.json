@@ -23,7 +23,8 @@
     "analyzer:analyze:android": "npx source-map-explorer ./analysis/android.bundle ./analysis/android.bundle.map --no-border-checks",
     "analyzer:analyze:android:json": "npx source-map-explorer ./analysis/android.bundle ./analysis/android.bundle.map --no-border-checks --json ./analysis/json/android.json",
     "analyzer:analyze:ios": "npx source-map-explorer ./analysis/ios.bundle ./analysis/ios.bundle.map --no-border-checks",
-    "analyzer:analyze:ios:json": "npx source-map-explorer ./analysis/ios.bundle ./analysis/ios.bundle.map --no-border-checks --json ./analysis/json/ios.json"
+    "analyzer:analyze:ios:json": "npx source-map-explorer ./analysis/ios.bundle ./analysis/ios.bundle.map --no-border-checks --json ./analysis/json/ios.json",
+    "generate:keys": "node scripts/generate-keys.js"
   },
   "dependencies": {
     "@axiomhq/logging": "^0.2.2",
