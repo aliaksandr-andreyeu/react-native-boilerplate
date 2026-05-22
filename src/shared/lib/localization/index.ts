@@ -39,5 +39,5 @@ export const isRTLLanguage = () => {
   return isRTL;
 };
 
-export { type Locale, fallbackLng, Lang, type LangCode } from './constants';
+export { type Locale, fallbackLng, Languages, Lang, type LangCode } from './constants';
 export { type Translation, resources } from './resources';

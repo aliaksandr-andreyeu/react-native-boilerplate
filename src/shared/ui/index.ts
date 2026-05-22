@@ -1,1 +1,1 @@
-export { BaseIconSize, BaseIconName, BaseIcon } from './components';
+export * from './components';

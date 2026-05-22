@@ -1,6 +1,5 @@
 .bundle/
 .husky/
-.npm-cache/
 .vscode/
 /assets/
 /android/

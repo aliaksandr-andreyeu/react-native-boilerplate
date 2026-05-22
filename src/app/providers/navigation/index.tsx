@@ -3,12 +3,15 @@ import { useColorScheme } from 'react-native';
 import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 import * as Sentry from '@sentry/react-native';
 import { useLogger, useReduxDevToolsExtension } from '@react-navigation/devtools';
-import { theme, UserTheme, logError, getAppTheme, setAppTheme, useNavigationPersistenceState } from '@/shared';
-
-export const enum ThemeScheme {
-  Dark = 'dark',
-  Light = 'light'
-}
+import {
+  theme,
+  UserTheme,
+  logError,
+  getAppTheme,
+  setAppTheme,
+  useNavigationPersistenceState,
+  ThemeScheme
+} from '@/shared';
 
 interface NavigationProviderProps {
   children?: ReactNode;

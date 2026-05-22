@@ -4,9 +4,6 @@ import { StorageKey, KeychainAccessTokenService, KeychainRefreshTokenService, Th
 import { storageService } from './storageService';
 import { keychainService } from './keychainService';
 
-export { storage } from './storageService';
-export { ThemeScheme } from './constants';
-
 export const getAccessToken = async (): Promise<string | null> => {
   try {
     let token = await keychainService.get({ service: KeychainAccessTokenService });
@@ -117,3 +114,6 @@ export const setAppLocale = (locale: Locale): boolean => {
     return false;
   }
 };
+
+export { storage } from './storageService';
+export { ThemeScheme } from './constants';
