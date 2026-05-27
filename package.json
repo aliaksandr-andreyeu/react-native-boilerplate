@@ -62,7 +62,7 @@
     "react-native-mmkv": "^4.3.1",
     "react-native-nitro-modules": "^0.35.7",
     "react-native-orientation-locker": "^1.7.0",
-    "react-native-reanimated": "^4.3.1",
+    "react-native-reanimated": "^4.4.0",
     "react-native-restart": "^0.0.27",
     "react-native-safe-area-context": "^5.8.0",
     "react-native-screens": "^4.25.1",
