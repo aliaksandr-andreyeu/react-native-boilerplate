@@ -63,7 +63,7 @@
     "react-native-nitro-modules": "^0.35.7",
     "react-native-orientation-locker": "^1.7.0",
     "react-native-reanimated": "^4.4.0",
-    "react-native-restart": "^0.0.27",
+    "react-native-restart": "^0.0.29",
     "react-native-safe-area-context": "^5.8.0",
     "react-native-screens": "^4.28.0",
     "react-native-svg": "^15.15.5",
